@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="en">
+<html class="" lang="en">
 
 <head>
     <!--- basic page needs
@@ -22,7 +22,7 @@
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <!-- <script src="js/modernizr.js"></script> -->
     <!-- <script src="js/pace.min.js"></script> -->
 
     <!-- favicons
@@ -30,12 +30,29 @@
 
 </head>
 
-<body id="top">
-    <section id="home">
+<body onload="myFunction();" id="top">
+    <div id ="loader" class="loader"></div>
+
+        <div id ="myDiv" class="myDiv">
+            <img class="image fade-in" src="images/samvit.jpg" alt="Card image cap">
             <div class="line-1 anim-typewriter" data-aos="fade-up">
                 <h1 class="home-title">Samvit Agarwal</h1>
             </div>
-    </section> <!-- end s-home -->
+        </div>
+
+    <script type="text/javascript">
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 2000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style = "display: none";
+          document.getElementById("myDiv").style = "display: block";
+        }
+    </script>
+
 </body>
 
 </html>
