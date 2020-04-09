@@ -94,7 +94,7 @@ body{
 
 .line-1{
     width: fit-content;
-    margin: 12vh auto;
+    margin: 40vh auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 4.5vw;
     font-style: bold;
