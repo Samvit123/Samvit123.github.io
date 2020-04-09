@@ -7,18 +7,19 @@ html{
   overflow: hidden;
   max-height: 100%;
   max-width: 100%;
+  background: linear-gradient(135deg, #141E30 0%, #243B55);
 }
 body{
   height: 100%;
+  width: 100%;
   height: calc(100vh - 8em);
-  padding: 4em;
+  padding-top: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
-  background: linear-gradient(135deg, #141E30 0%, #243B55);
 }
 
 .image{
-  margin-left: 40vw;
+  margin: auto;
   max-width: 300px;
   display: block;
   border-radius: 50%;
