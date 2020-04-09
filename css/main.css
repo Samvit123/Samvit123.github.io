@@ -7,7 +7,7 @@ html{
   overflow: hidden;
   max-height: 100%;
   max-width: 100%;
-  background: linear-gradient(135deg, #141E30 0%, #243B55);
+
 }
 body{
   height: 100%;
@@ -16,6 +16,7 @@ body{
   padding-top: 4em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
+  background: linear-gradient(135deg, #141E30 0%, #243B55);
 }
 
 .image{
@@ -39,6 +40,25 @@ body{
   100% {
     opacity:1;
   }
+}
+
+.fade-in2{
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+
+
+.subhead{
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5vw;
+  word-wrap: break-word;
 }
 
 .loader {
@@ -73,17 +93,17 @@ body{
 }
 
 .line-1{
-    /* position: relative; */
     width: fit-content;
-    margin: 10vh auto;
+    margin: 12vh auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-style: bold;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     line-height: 10px;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
+    margin-bottom: -2em;
 }
 
 /* Animation */
