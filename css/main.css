@@ -2,21 +2,15 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html{
-  min-height: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  max-width: 100%;
-
-}
-body{
+html,body{
   height: 100%;
   width: 100%;
-  height: calc(100vh - 8em);
-  padding-top: 4em;
+  overflow-x: hidden;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
-  background: linear-gradient(135deg, #141E30 0%, #243B55);
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .image{
@@ -50,17 +44,6 @@ body{
   -ms-animation: fadeIn ease 10s;
 }
 
-
-
-.subhead{
-  overflow: hidden;
-  max-width: 100%;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.5vw;
-  word-wrap: break-word;
-}
-
 .loader {
   position: absolute;
   left: 50%;
@@ -78,8 +61,69 @@ body{
   animation: spin 2s linear infinite;
 }
 
+img{
+  width: 600px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
 .myDiv{
   display: none;
+  height: 100%;
+  width: 100%;
+  padding-top: 40vh;
+  background: linear-gradient(135deg, #141E30 0%, #243B55);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.home-title{
+  font-size: 10vw;
+  font-weight: bold;
+}
+
+.home-sub{
+  font-size: 3vw;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about{
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 10vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  background: #f7f7f7;
+  color:black;
+  padding-bottom: 10vh;
+}
+
+p{
+  color:#707070;
+}
+
+.image-class{
+  padding-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-title{
+  font-size:5vmax;
+  font-weight: bold;
+}
+
+.about-text{
+  font-size: 1.25vmax;
+}
+
+#loading{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #141E30 0%, #243B55);
 }
 
 @-webkit-keyframes spin {
@@ -94,16 +138,10 @@ body{
 
 .line-1{
     width: fit-content;
-    margin: 40vh auto;
+    margin: auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 4.5vw;
-    font-style: bold;
-    text-align: center;
-    white-space: nowrap;
     overflow: hidden;
     line-height: 10px;
-    transform: translateY(-50%);
-    margin-bottom: -2em;
 }
 
 /* Animation */

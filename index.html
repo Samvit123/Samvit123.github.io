@@ -3,6 +3,10 @@
 <html class="" lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!--- basic page needs
     ================================================== -->
@@ -32,14 +36,32 @@
 </head>
 
 <body onload="myFunction();" id="top">
-    <div id ="loader" class="loader"></div>
+    <div id="loading">
+        <div id ="loader" class="loader"></div>
+    </div>
 
         <div id ="myDiv" class="myDiv">
             <div class="line-1 anim-typewriter" data-aos="fade-up">
                 <h1 class="home-title">Samvit Agarwal</h1>
             </div>
             <div class ="subhead animated fadeInUp delay-4s">
-                <h1>Student/Programmer/Entrepreneur</h1>
+                <h1 class="home-sub">Student/Programmer/Entrepreneur</h1>
+            </div>
+        </div>
+
+        <div id="about" class="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-text">
+                        Hey there! My name is Neil Deshmukh, and I’m currently a 12th grader at Moravian Academy in Pennsylvania. 
+                        I’m insanely interested in the field of AI, as you can see from a lot of the projects I’ve worked on. 
+                        I’ve also been working to dispel the myth that AI is difficult or even impossible to work with, and teaching students around the world about the technology behind Machine Learning. 
+                    </p>
+                </div>
+                <div class="col-md-6 image-class">
+                    <img class="hoverable" src="images/samvit.jpg" alt="Card image cap">
+                </div>
             </div>
         </div>
 
@@ -51,7 +73,7 @@
         }
         
         function showPage() {
-          document.getElementById("loader").style = "display: none";
+          document.getElementById("loading").style = "display: none";
           document.getElementById("myDiv").style = "display: block";
         }
 
