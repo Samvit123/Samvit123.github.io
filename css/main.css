@@ -5,7 +5,6 @@
 html,body{
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
   background-color: white;
@@ -13,12 +12,23 @@ html,body{
   padding: 0;
 }
 
-.image{
-  margin: auto;
-  max-width: 300px;
-  display: block;
-  border-radius: 50%;
+body{
+  overflow-x: hidden;
 }
+
+#myNav{
+  padding-left: 3vmax;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 20px;
+  font-family:'Work Sans';
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-size: 25px;
+}
+
 
 .fade-in {
   animation: fadeIn ease 5s;
@@ -27,6 +37,8 @@ html,body{
   -o-animation: fadeIn ease 5s;
   -ms-animation: fadeIn ease 5s;
 }
+
+
 @keyframes fadeIn {
   0% {
     opacity:0;
@@ -43,6 +55,7 @@ html,body{
   -o-animation: fadeIn ease 10s;
   -ms-animation: fadeIn ease 10s;
 }
+
 
 .loader {
   position: absolute;
@@ -69,8 +82,64 @@ img{
   margin: auto;
 }
 
+.projects{
+  padding-top: 4vmax;
+  padding-bottom: 3vmax;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: white;
+  color: black;
+}
+
+
+.projects-title{
+  font-size: 3vmax;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.projects-row{
+  width: 100%;
+  padding-top: 3vmax;
+  padding-left: 3vmax;
+  padding-right: 3vmax;
+
+}
+
+.card-title{
+  font-weight: bold;
+  font-family: 'Work Sans';
+}
+
+.my-top{
+  border-radius: 25px;
+  box-shadow: 0 10px 20px gray;
+  position: relative;
+  top: 1vmax;
+  opacity: 1.5;
+  z-index: 10;
+}
+
+.col-main{
+  margin: auto;
+  text-align: center;
+  padding-bottom: 3vmax;
+}
+
+.card{
+  text-align: left;
+  display: inline-block;
+  padding-top: 1vmax;
+  position: relative;
+  box-shadow: 0 10px 20px darkgray;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
 .myDiv{
-  display: none;
   height: 100%;
   width: 100%;
   padding-top: 40vh;
@@ -106,7 +175,7 @@ p{
 }
 
 .image-class{
-  padding-top: 5vw;
+  /* padding-top: 5vw; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -117,7 +186,8 @@ p{
 }
 
 .about-text{
-  font-size: 1.25vmax;
+  font-size: 1.5vmax;
+  font-family: 'Work Sans';
 }
 
 #loading{
