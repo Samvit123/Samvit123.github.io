@@ -46,7 +46,12 @@
 
 <body id="top">
 
-    <header class="s-header">
+    <!-- <div id="loading">
+        <div class="loader">
+        </div>
+    </div> -->
+
+    <header id="s-header" class="s-header">
         <nav id="myNav" class="navbar fixed-top navbar-expand-lg navbar-light">
             <a class="navbar-brand" style="color: black;" href="#home">Samvit</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,13 +66,16 @@
                     <a class="nav-link smoothscroll" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link smoothscroll" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Initiatives</a>
+                    <a class="nav-link smoothscroll" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="resume/Resume.pdf">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#contact">Contact</a>
                 </li>
                 </ul>
             </div>
@@ -86,11 +94,13 @@
     <div id="about" class="about">
         <div class="row animated" data-aos="fade-up">
             <div class="col-md-6">
-                <!-- <h1 class="about-title">About Me</h1> -->
+                <h1 class="about-title">About Me</h1>
                 <p class="about-text">
-                    <!-- Hey there! My name is Samvit Agarwal, and I’m currently a 12th grader at Moravian Academy in Pennsylvania. 
-                    I’m insanely interested in the field of AI, as you can see from a lot of the projects I’ve worked on. 
-                    I’ve also been working to dispel the myth that AI is difficult or even impossible to work with, and teaching students around the world about the technology behind Machine Learning.  -->
+                    Hey there! My name is Samvit Agarwal, and I’m currently an 11th grader at West Windsor-Plainsboro High School South in New Jersey. 
+                    I'm extremely interested in computer science and entrepreneurship, and I aim to make products that can impact people across the world. 
+                    Over the past few years, I've immersed myself in a suite of activities that have allowed me to explore these passions in greater depth, 
+                    and I built this website to showcase some of my most notable experiences and projects.
+
                 </p>
             </div>
             <div class="col-md-6 image-class">
@@ -111,7 +121,13 @@
                     <div class="card box-shadow">
                         <div class="card-body">
                             <h2 class="card-title">Unifyd</h2>
-                            <p class="card-text">Decentralized marketplace connecting vedors to buyers amongst COVID-19</p>
+                            <h5 class="card-text">Decentralized marketplace connecting vedors to buyers amongst COVID-19.</h5>
+                            <p class="projects-text">
+                                With the recent surges in demand for essential products and subsequent shortages across stores throughout the nation, many people have found themselves unable to purchase even basic items. 
+                                Unifyd aims to solve these issues by providing a democratized and decentralized platform that connects vendors with customers and provides an adaptable interface that
+                                reflects constantly changing prices and supplies. A platform like this eliminates the need to constantly make risky trips to stores just to check for supplies and provides users with an easy to use system 
+                                to ensure they get the things they need most.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -122,21 +138,247 @@
                     <div class="card box-shadow">
                         <div class="card-body">
                             <h2 class="card-title">Social Eyes</h2>
-                            <p class="card-text">A platform built to allow users to clean their social media</p>
+                            <h5 class="card-text">Social media monitoring system built with natural language processing.</h5>
+                            <p class="projects-text">
+                                Every day millions of people across the world use social media platforms such as Twitter and often post unintentionally offensive or profane content in an impulsive manner. 
+                                Through its use of natural language processing, Social Eyes provides users with a simple interface that helps them identify and remove such posts.
+                            </p>
+                            <h5 class="award-text">*Won 1st place at MakeSPP 2018(100+ competitors)</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                
+            <div class="col-lg-4 col-main">
+                <img class="card-img-top my-top" style="max-width: 500px; display: inline-block;" src="images/intellicity.jpg" data-holder-rendered="true">
+                <div class="custom-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">Intellicity</h2>
+                            <h5 class="card-text">A crowdsourced, real-time app that adapts to the city around you.</h5>
+                            <p class="projects-text">
+                                Big cities can often be confusing. Finding even the simplest of things - the nearest restroom, parking space,
+                                or garage can be quite a hassle. These petty inconveniences can take a much more serious turn, however, 
+                                when it comes to crimes committed or potential danger within the city. IntelliCity was designed to accommodate each one of these situations by providing users with a flexible, 
+                                real-time app that reacts to the city around them.
+                            </p>
+                            <h5 class="award-text">*Placed in the top 30 at PennAPPS 2019 International Hackathon(800+ competitors)</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4">
-    
+        </div>
+        <div class="row projects-row" data-aos="fade-up">
+            <div class="col-lg-6 col-main">
+                <img class="card-img-top my-top" style="max-width: 500px; display: inline-block;" src="images/crisisconnect.jpg" data-holder-rendered="true">
+                <div class="custom-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">Crisis Connect</h2>
+                            <h5 class="card-text">Helping disaster victims get their message out, even without wifi or cellular networks.</h5>
+                            <p class="projects-text">
+                                Although millions of people across the world are affected by some form of disaster every day, 
+                                these people often find themselves without the proper resources to escape danger once they find themselves in it. 
+                                Crisis Connect aims to solve this issue by providing victims without access to the internet or other forms of communication to make their voice heard 
+                                by propagating their messages through a mesh network of nodes until a device with internet is found.
+                            </p>
+                            <h5 class="award-text">*Placed in the top 5 at ProfHacks 2019(200+ competitors)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-main">
+                <img class="card-img-top my-top" style="max-width: 500px; display: inline-block;" src="images/noiceml.JPG" data-holder-rendered="true">
+                <div class="custom-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">NoiceML</h2>
+                            <h5 class="card-text">Leveraging the power of machine learning for better note-taking.</h5>
+                            <p class="projects-text">
+                                NoiceML was made to simplify the note-taking process many students go through, which often results in subpar understanding.
+                                It uses live natural language processing in order to construct a transcribed version of a lecture, that intelligently maps notes
+                                to specific parts of the lecture. Through the use of text-to-speech and translation APIs, it also enables users to get a live translation 
+                                of a lecture in a plethora of different languages.
+                            </p>
+                            <h5 class="award-text">*Won Best High School Hack at HackTCNJ 2019(100+ competitors)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="experience">
+        <div>
+            <h1 class="experience-title" data-aos="fade-up">Experience and Initiatives</h1>
+        </div>
+        <div class="row experience-row"  data-aos="fade-up" >
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style=" max-height: 400px; display: inline-block;" src="images/csr.JPG" data-holder-rendered="true">
+            </div>
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">CS Remastered</h2>
+                            <h5 class="card-text">President & Founder</h5>
+                            <p class="card-text2">
+                                CS Remastered is a 501(c)(3) nonprofit organization I founded during my sophomore year, aimed at teaching students one-on-one computer science for free.
+                                My motivation for starting this largely came from my parents, who would often ask me to help out kids around the neighborhood with their
+                                programming-related questions. After working with some of these kids, I realized that while they all shared a genuine passion for computer science,
+                                there simply weren't enough good resources out there to help them get started. The resources that did exist, would often stress memorization or
+                                language-specific syntax, ignoring the true essence of the subject. At CS Remastered, our goal is to teach students computer science in an
+                                extremely adaptable way, one that is tailored to each individual student and their own schedule, and our projects and teaching style stress genuine
+                                understanding over brute memorization. Overall, through CS Remastered we have been able to connect more than 200 students and volunteers across our
+                                community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row experience-row" data-aos="fade-up" >
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">Central Jersey Student Innovators Association</h2>
+                            <h5 class="card-text">Director of Technology</h5>
+                            <p class="card-text2">
+                                CJSIA is an organization comprised of entrepreneurially minded students throughout New Jersey that aims to 
+                                bridge the gap between age and innovation. We routinely organize and run seminars from some of the most influential
+                                entrepreneurs in our area, and provide workshops on topics related to business, public speaking, and technology. As the director 
+                                of technology, I work with guest speakers and local entrepreneurs to help students leverage technology in their projects. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style=" max-height: 400px; display: inline-block;" src="images/cjsia.png" data-holder-rendered="true">
+            </div>
+        </div>
+        <div class="row experience-row"  data-aos="fade-up" >
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style=" max-height: 400px; display: inline-block;" src="images/upenn.png" data-holder-rendered="true">
+            </div>
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">University of Pennsylvania</h2>
+                            <h5 class="card-text">Summer Research Intern</h5>
+                            <p class="card-text2">
+                                Over the summer of 2019, I worked under a UPENN professor to conduct cybersecurity research relating to cryptography and 
+                                key-exchange mechanisms. Together, we worked on developing a fully anonymous messaging service that prevents advanced 
+                                security issues such as traffic analysis or packet-sniffing, privacy shortcomings even the most popular messaging platforms suffer from today.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row experience-row"   data-aos="fade-up" >
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">Code Ninjas</h2>
+                            <h5 class="card-text">Instructor</h5>
+                            <p class="card-text2">
+                                Code Ninjas is a company focused on teaching game-development in an easy to learn manner, one that is accessible to 
+                                students across different ages. As an instructor, I worked directly with a variety of different kids and guided them
+                                through game development in basic languages such as Scratch, all the way up to complex real-world languages including 
+                                C# and Javascript.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style=" max-height: 400px; display: inline-block;" src="images/codeninjas.jpg" data-holder-rendered="true">
+            </div>
+        </div>
+        <div class="row experience-row" data-aos="fade-up">
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style="display: inline-block;" src="images/mun.jpg" data-holder-rendered="true">
+            </div>
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">Model United Nations</h2>
+                            <h5 class="card-text">Secretariat</h5>
+                            <p class="card-text2">
+                                I have been involved in my school's Model U.N. club ever since my freshman year, and have been to several regional and 
+                                national level conferences along the way. At these conferences, I have spoken on a variety of global issues and modern-day 
+                                crisis, and have worked in groups to come up with and present real-time solutions. As a member of the secretariat, I've also played
+                                an integral part in organizing my school's own annual competition, which has given me exposure to fundraising, marketing and 
+                                even chairing my own committee. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row experience-row"  data-aos="fade-up" >
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">USA Computing Olympiad</h2>
+                            <h5 class="card-text">Gold Division Competitor</h5>
+                            <p class="card-text2">
+                               As a competitor in this national-level computer science olympiad, I regularly solve algorithmic and theoretical computer science problems,
+                               which has helped me grow my problem-solving skills and overall mathematical intuition. I have also learned and implemented various algorithms and 
+                               data-structures along the way, some of which I have even been able to incorporate into my other apps and projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style=" max-height: 400px; display: inline-block;" src="images/usaco.png" data-holder-rendered="true">
+            </div>
+        </div>
+        <div class="row experience-row"  data-aos="fade-up">
+            <div class="col-lg-4 imagecol">
+                <img class="card-img-top image2" style="max-height: 400px; display: inline-block;" src="images/youtube.png" data-holder-rendered="true">
+            </div>
+            <div class="col-lg-7 textcol">
+                <div class="experience-card">
+                    <div class="card box-shadow">
+                        <div class="card-body">
+                            <h2 class="card-title">YouTube</h2>
+                            <h5 class="card-text">Technology Content Creator</h5>
+                            <p class="card-text2">
+                                I started creating videos for YouTube more than 5 years ago, mainly to help out my friends and family with their technical issues. Ever since then, 
+                                I have made a plethora of how-to videos, guiding people through various aspects of technology. Through my content, I have been able to impact more
+                                than 4 million people across the world, and have generated over 10,000 subscribers in the process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
+    <div id="contact" class="contact">
+        <div>
+            <h2 class="contact-text" data-aos="fade-up">Contact Me</h2>
+        </div>
+        <div class="contact-icons" data-aos="fade-up">
+            <a href="mailto:samvitagarwal03@gmail.com">
+                <i class="fa fa-envelope-square contact-image" style="font-size: 50px; color: #B71540;" href="https://www.samvit.me"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/samvit-agarwal-b321b6157/">
+                <i class="fa fa-linkedin contact-image" style="font-size: 50px; color: #0078B6;"></i>
+            </a>
+            <a href="https://github.com/Samvit123">
+                <i class="fa fa-github contact-image" style="font-size: 50px; color: black;"></i>
+            </a>
+        </div>
+    </div>
 
 
     <script src="js/main.js"></script>
@@ -164,6 +406,19 @@
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
       
       });
+
+    // var myVar;
+
+    // function myFunction() {
+    // myVar = setTimeout(showPage, 3000);
+    // }
+
+    // function showPage() {
+    // document.getElementById("loading").style.display = "none";
+    // document.getElementById("myDiv").style.display = "block";
+    // document.getElementById("s-header").style.display = "block";
+    // }
+
     </script>
 </body>
 

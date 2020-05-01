@@ -84,19 +84,19 @@ img{
 
 .projects{
   padding-top: 4vmax;
-  padding-bottom: 3vmax;
-  max-height: 100%;
-  max-width: 100%;
+  padding-bottom: 10vmax;
+  width: 100%;
   background-color: white;
   color: black;
 }
 
 
 .projects-title{
-  font-size: 3vmax;
+  /* font-size: 3vmax; */
   text-align: center;
   font-weight: bold;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Work Sans', monospace; 
+
 }
 
 .projects-row{
@@ -121,23 +121,51 @@ img{
   z-index: 10;
 }
 
+.image2{
+  border-radius: 25px;
+  box-shadow: 0 10px 20px gray;
+  position: relative;
+  opacity: 1.5;
+  z-index: 10;
+  margin: 0;
+}
+
+.imagecol{
+  padding-bottom: 2vmax;
+}
+
 .col-main{
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
   padding-bottom: 3vmax;
 }
 
 .card{
   text-align: left;
-  display: inline-block;
   padding-top: 1vmax;
-  position: relative;
   box-shadow: 0 10px 20px darkgray;
-  max-width: 500px;
   background-color: white;
   border-radius: 20px;
 }
 
+.custom-card{
+  max-width: 500px;
+  display: inline-block;
+}
+
+.card-text{
+  font-family: 'Work Sans';
+  font-weight: bold;
+  color: rgb(0,48,98);
+}
+
+
+.award-text{
+  font-family: 'Work Sans';
+  font-weight: bold;
+  color: darkred;
+  font-style: italic;
+}
 
 .myDiv{
   height: 100%;
@@ -160,8 +188,7 @@ img{
 }
 
 .about{
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   padding-top: 10vh;
   padding-left: 7vw;
   padding-right: 7vw;
@@ -190,6 +217,46 @@ p{
   font-family: 'Work Sans';
 }
 
+.projects-text{
+  font-family: 'Work Sans';
+}
+
+.experience{
+  padding-top: 5vmax;
+  padding-bottom: 5vmax;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: black;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.experience-row{
+  padding-top: 3vmax;
+}
+
+.experience-title{
+  text-align: center;
+  font-family: 'Work Sans';
+  font-weight: bold;
+}
+
+.card-sub{
+  font-family: 'Work Sans';
+  color: darkred;
+  font-weight: bold;
+}
+
+.card-text2{
+  font-family: 'Work Sans';
+  font-weight: bold;
+  /* color: rgb(0,48,98); */
+}
+
+.textcol{
+  padding-bottom: 2vmax;
+}
+
 #loading{
   height: 100%;
   width: 100%;
@@ -212,6 +279,30 @@ p{
     border-right: 2px solid rgba(255,255,255,.75);
     overflow: hidden;
     line-height: 10px;
+}
+
+.contact{
+  padding-top: 2vmax;
+  padding-bottom: 3vmax;
+  background-color: #243142;
+  text-align: center;
+}
+
+.contact-image{
+  padding-top: 1vmax;
+  padding-right: 1vmax;
+  padding-left: 1vmax;
+  text-shadow: 3px 6px #272634;
+}
+
+.row-diff{
+  text-align: center;
+}
+
+.contact-text{
+  font-family: 'Work Sans';
+  color: grey;
+  font-weight: bold;
 }
 
 /* Animation */
