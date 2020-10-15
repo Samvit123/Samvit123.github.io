@@ -107,6 +107,7 @@ img{
 
 }
 
+
 .card-title{
   font-weight: bold;
   font-family: 'Work Sans';
@@ -307,7 +308,7 @@ p{
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 2s steps(200) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
